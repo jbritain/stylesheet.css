@@ -7,7 +7,6 @@
   --primary: #42f548;
   --secondary: #030026;
   --accent: #ff33e0;
-  --border-radius: 16px;
   --heading-font: 'IBM Plex Mono';
   --body-font: 'IBM Plex Mono'
 }
@@ -22,6 +21,11 @@ body {
   background-color: var(--background);
   color: var(--text);
   margin: 0px;
+  margin: 32px;
+}
+
+body h1:first-child {
+  margin-top: 0px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -45,9 +49,9 @@ small {font-size: 0.750rem; /* 12px */}
 
 main, article {
   margin: 32px;
-  padding: 16px;
+  padding: 32px;
   background-color: var(--secondary-background);
-  border-radius: var(--border-radius);
+  border-radius: 4px;
 }
 
 a:link {
@@ -79,7 +83,7 @@ button, input[type=submit] {
   padding-left: 16px;
   padding-right: 16px;
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: 16px;
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -109,6 +113,7 @@ textarea {
 
 table {
   border-collapse: collapse;
+  margin: 16px
 }
 
 th, td {
@@ -121,6 +126,11 @@ th {
   color: var(--background);
 }
 
+th a {
+  color: black !important;
+  text-decoration: underline !important;
+}
+
 tr:nth-child(even){
-  background-color: var(--secondary);
+  background-color: var(--secondary-background);
 }
